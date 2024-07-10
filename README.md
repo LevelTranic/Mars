@@ -1,5 +1,6 @@
 # Mars
 > **WARNING: This is not for regular users**
+
 A super lightweight clone of api.papermc.io
 
 [👉Download](https://github.com/LevelTranic/Mars/releases)
