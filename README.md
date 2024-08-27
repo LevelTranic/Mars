@@ -21,3 +21,7 @@ Version: **v1.4.0**
 [👉Windows](https://www.virustotal.com/gui/file/4729fce799ce6ef2e4704907df7261049e4731b7f2a1963800197e8f89c9814d?nocache=1)
 
 [👉Linux](https://www.virustotal.com/gui/file/5cb9589504322bfcaef3afb562adc873304100dd59a801bb801b241ec1b75373?nocache=1)
+
+## Contact Us
+
+Discord: https://discord.gg/dBbSbv2Vuz
