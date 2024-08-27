@@ -10,17 +10,17 @@ A super lightweight clone of api.papermc.io
 ## Scan Report
 Due to the large number of build products, only reports for the latest versions of amd64 v1 and arm64 are provided.
 
-Version: **v1.4.0**
+Version: **v1.4.2**
 
 ### AMD64 v1
-[👉Windows](https://www.virustotal.com/gui/file/143f47507cb07812619ea82c76f72f477332584aba2415352ad9d72c12870677?nocache=1)
+[👉Windows](https://www.virustotal.com/gui/file/f9ad403aa47a34980865071e60b3dedc46d2933e6dc3bbcc7542fd3d538d48fc?nocache=1)
 
-[👉Linux](https://www.virustotal.com/gui/file/921d7ef485dc94870d7eb84a57e5feb642f14efb4d32d851f472a891f73504ec?nocache=1)
+[👉Linux](https://www.virustotal.com/gui/file/f357959079062db021e2aca8fe158ede0a7e044762df4eabc96132247b94b690?nocache=1) [It looks like rising doesn't trust our software, I will try to report this issue to them.]
 
 ### ARM64
-[👉Windows](https://www.virustotal.com/gui/file/4729fce799ce6ef2e4704907df7261049e4731b7f2a1963800197e8f89c9814d?nocache=1)
+[👉Windows](https://www.virustotal.com/gui/file/58de988bb1ee771eb39f9e5cc6a64fdd5e40e0659c54eb7e5762a74e07aefa61?nocache=1)
 
-[👉Linux](https://www.virustotal.com/gui/file/5cb9589504322bfcaef3afb562adc873304100dd59a801bb801b241ec1b75373?nocache=1)
+Linux: The toolchain is broken and no binaries can be provided for it.
 
 ## Contact Us
 
