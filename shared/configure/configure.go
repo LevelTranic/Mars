@@ -7,10 +7,10 @@ import (
 	"github.com/3JoB/ulib/fsutil"
 	"gopkg.in/yaml.v3"
 
-	"Mars/shared/schemas"
+	hssv2 "Mars/shared/httpschemas/v2"
 )
 
-var conf *schemas.Configure
+var conf *hssv2.Configure
 
 const ConfigVersion = "1.4.0"
 
@@ -22,7 +22,7 @@ func NewConfig() {
 		slog.Error(err.Error())
 		os.Exit(1)
 	} else {
-		var conf0 *schemas.Configure
+		var conf0 *hssv2.Configure
 		if err = yaml.NewDecoder(f).Decode(&conf0); err != nil {
 			slog.Error(err.Error())
 			os.Exit(1)
@@ -42,6 +42,6 @@ func NewConfig() {
 	}
 }
 
-func Get() *schemas.Configure {
+func Get() *hssv2.Configure {
 	return conf
 }

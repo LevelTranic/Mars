@@ -5,9 +5,9 @@ import (
 
 	"Mars/server/controller"
 	_default "Mars/server/controller/default"
-	"Mars/server/controller/gbuilds"
-	"Mars/server/controller/gdel"
-	"Mars/server/controller/gnew"
+	"Mars/server/controller/v2/gbuilds"
+	"Mars/server/controller/v2/gdel"
+	"Mars/server/controller/v2/gnew"
 )
 
 func Router(s *atreugo.Atreugo) {

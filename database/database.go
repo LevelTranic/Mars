@@ -10,8 +10,8 @@ import (
 	"gorm.io/driver/sqlite"
 	"gorm.io/gorm"
 
-	"Mars/database/schemas"
 	"Mars/database/shared"
+	"Mars/database/v2/schemas"
 	"Mars/shared/configure"
 )
 

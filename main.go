@@ -4,7 +4,7 @@ import (
 	"log/slog"
 
 	"Mars/database"
-	"Mars/database/controller"
+	"Mars/database/v2/controller"
 	"Mars/server"
 	"Mars/shared/configure"
 	"Mars/shared/utils/json"

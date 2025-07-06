@@ -11,9 +11,10 @@ import (
 	"github.com/3JoB/ulib/timings"
 	"github.com/bytedance/sonic"
 
+	dbsv2 "Mars/database/v2/schemas"
 	schemas2 "Mars/server/schemas"
 	"Mars/shared/configure"
-	"Mars/shared/schemas"
+	hssv2 "Mars/shared/httpschemas/v2"
 )
 
 func PreTouch() {
@@ -24,12 +25,12 @@ func PreTouch() {
 	errors := 0
 	var b = []reflect.Type{
 		// b
-		reflect.TypeOf(schemas.Change{}),
-		reflect.TypeOf([]schemas.Change{}),
-		reflect.TypeOf(schemas.NewDownloadSchema{}),
-		reflect.TypeOf(schemas.IndexVersion{}),
-		reflect.TypeOf(schemas.ApplicationVersionsSchema{}),
-		reflect.TypeOf(map[string]schemas.ApplicationVersionsSchema{}),
+		reflect.TypeOf(dbsv2.Change{}),
+		reflect.TypeOf([]dbsv2.Change{}),
+		reflect.TypeOf(hssv2.NewDownloadSchema{}),
+		reflect.TypeOf(hssv2.IndexVersion{}),
+		reflect.TypeOf(hssv2.ApplicationVersionsSchema{}),
+		reflect.TypeOf(map[string]hssv2.ApplicationVersionsSchema{}),
 
 		// c
 		reflect.TypeOf(schemas2.ProjectRootSchema{}),
