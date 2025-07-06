@@ -23,10 +23,9 @@ func Version(c *atreugo.RequestCtx) error {
 		return c.JSONResponse(schemas.NewError("missing parameter"), 400)
 	}
 
-	ok, info := controller.CreateVersion(jar.Project, jar.Version, jar.Group)
-	if ok {
-		return c.JSONResponse(schemas.NewResult(info), 200)
+	if err := controller.CreateVersion(jar.Project, jar.Version, jar.Group); err == nil {
+		return c.JSONResponse(schemas.NewResult("done"), 200)
+	} else {
+		return c.JSONResponse(schemas.NewErrors(err), 400)
 	}
-
-	return c.JSONResponse(schemas.NewError(info), 400)
 }

@@ -1,6 +1,7 @@
 package controller
 
 import (
+	"errors"
 	"time"
 
 	"gorm.io/gorm"
@@ -20,18 +21,18 @@ func newVersion(project, name, group string) *gorm.DB {
 	return shared.DB.Create(&version)
 }
 
-func CreateVersion(project, name, group string) (bool, string) {
+func CreateVersion(project, name, group string) error {
 	var version schemas.Version
 	if err := shared.DB.Where("project = ? AND name = ? AND `group` = ?", project, name, group).First(&version).Error; err != nil {
 		if err == gorm.ErrRecordNotFound {
 			if err = newVersion(project, name, group).Error; err != nil {
-				return false, err.Error()
+				return err
 			}
-			return true, "done"
+			return nil
 		}
-		return false, err.Error()
+		return err
 	}
-	return false, "The same content already exists"
+	return errors.New("the same content already exists")
 }
 
 // FindVersionByProjectAndName finds a Version by project and name
